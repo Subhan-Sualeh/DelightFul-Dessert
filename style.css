@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+.upper{
+    align-items: center;
+    display: flex;
+}
+.upperlogo{
+    margin-left: 15px;
+}
+nav{
+    margin-left: 30px ;
+    flex: 1;
+    text-align: left;
+}
+ul{
+    list-style: none;
+    display: inline-block;
+}
+.list li{
+    display: inline;
+    margin-right: 30px;
+    font-size: 1.4rem;
+}
+.cart{
+    margin-right: 35px;
+    cursor: pointer;
+}   
+.list a{
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.list a:hover{
+    color: rgb(204, 87, 52);
+}
+.headblock{
+    padding-top: 80px;
+    padding-bottom: 80px;
+background:linear-gradient(rgb(253, 168, 119),rgb(238, 146, 66)) ;
+/* align-items: center; */
+display: flex;
+}
+.Headtext{
+    margin-left: 35px;
+    padding-top: 50px;
+    color: white
+}
+.Headtext h1{
+    transition: 0.5s;
+}
+.headimg{
+    margin-left: 150px;
+}
+.Headtext h1:hover{
+    color: rgb(80, 44, 14);
+}
+.categories{
+    margin-top: 20px;
+    text-align: center  ;
+    font-size: 25px;
+}
+.categories h1{
+    transition: 0.5s;
+    margin-bottom: 35px;
+}
+.categories h1:hover{
+    color: rgb(214, 122, 10);
+}
+.cateline{    
+        display: flex;
+        margin-left: 25px;
+    }
+.majofav{
+    text-align: center;
+    font-size: 26px;
+    transition: 0.5s;
+    margin-bottom: 30px;
+}
+.majofav span{
+    color: rgb(214, 122, 10);
+}
+.majofav:hover{
+   text-decoration: underline black;
+   color: rgb(214, 122, 10);
+}  
+.additions{
+    margin-top: 50px;
+}
+.addpics{ 
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.addimg{
+    /* margin-bottom: 50px;  */
+    margin-left: 40px;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+.addimg:hover{
+   box-shadow: 0 0 20px 0 black;
+   cursor: pointer;
+}
+.addimg h4{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.addimg img{
+    width: 250px;
+    height: 250px;
+}
+.flavorM h1{
+    margin-top: 45px;
+    text-align: center;
+    transition: 0.5s;
+}
+.flavorM h1:hover{
+    text-decoration: underline black 5px;
+    color: darkorange;
+}
+.Fm{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.Fm img{
+    width: 570px;
+}
+.wrap{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.aboutF{
+    margin-left: 10px;
+    padding-left: 50px;
+    padding-right: 50px; 
+    text-align: center;
+    background-color: pink;
+    padding-top:170px;
+    padding-bottom: 155px; 
+}
+.aboutF h3{
+    font-size: 30px;
+    margin-bottom: 23px;
+}
+.aboutF .para {
+    padding: 50px;
+}
+.aboutF h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.Johns{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(78, 77, 77);
+    font-size: 25px;
+}
+.aboutF button{
+    font-size: 40px;
+    background-color: transparent;
+    border: transparent;
+}
+.aboutF a{
+    color:white;
+    text-decoration: transparent;
+    transition: 0.5s;
+
+}
+.aboutF a:hover{
+    color: orangered;
+}
+.footer{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.logo{
+    padding-right: 15px;
+}
+.logo img{
+    width: 200px;
+}
+.footermenu{
+    display: flex;
+ flex-wrap: wrap;
+}
+.menu1, .menu2{
+   margin-top: 40px;
+   margin-left: 80px;
+   font-size: 20px;
+}
+.menu2{
+    margin-left: 100px;
+}
+.footermenu a{
+    text-decoration: none;
+    color: black;
+}
+.footermenu a:hover{
+    color: blue;
+    text-decoration: underline cyan;
+}
+.icons{
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 230px;
+}
+.menu{
+    display: none;
+    
+}
+.copyright {
+    margin: 0;
+    padding-right: 10px;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    text-align: right;
+}
+hr{
+    border: none;
+    background-color: black;
+}
+@media only screen and (max-width: 800px){
+    .icons{
+        align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 400px;
+    }
+    .list ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s ;
+    }
+    .list ul li{
+        text-align: right;
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .list ul li a{
+        color: white;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }       
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
